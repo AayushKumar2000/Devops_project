@@ -387,6 +387,9 @@ void modify_student()
 	getch();
 
 }
+
+//    	function to delete record of file
+
 void delete_student()
 {
 	char n[6];
@@ -435,6 +438,9 @@ void delete_student()
 
     	getch();
 }
+
+
+
 void delete_book()
 {
 	char n[6];
@@ -476,6 +482,7 @@ void delete_book()
     	cout<<"\n\n\tRecord Deleted ..";
 
     	getch();
+    	
 }
 
 
