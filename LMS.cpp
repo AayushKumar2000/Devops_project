@@ -435,6 +435,47 @@ void delete_student()
 
     	getch();
 }
+void delete_book()
+{
+	char n[6];
 
+      system("cls");
+
+	cout<<"\n\n\n\tDELETE BOOK ...";
+
+	cout<<"\n\nEnter The Book no. of the Book You Want To Delete : ";
+
+	cin>>n;
+
+	fp.open("book.dat",ios::in|ios::out);
+
+	fstream fp2;
+
+	fp2.open("Temp.dat",ios::out);
+
+	fp.seekg(0,ios::beg);
+
+	while(fp.read((char*)&bk,sizeof(book)))
+
+	{
+		if(strcmpi(bk.retbno(),n)!=0)  
+		{
+			fp2.write((char*)&bk,sizeof(book));
+
+		}
+	}
+    	
+	fp2.close();
+
+    	fp.close();
+
+    	remove("book.dat");
+
+    	rename("Temp.dat","book.dat");
+
+    	cout<<"\n\n\tRecord Deleted ..";
+
+    	getch();
+}
 
 
