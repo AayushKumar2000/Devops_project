@@ -517,5 +517,54 @@ void admin_menu()
 	cout<<"\n\n\tPlease Enter Your Choice (1-11) ";
 	
 	cin>>ch2;
+	
+        remove("book.dat");
+
+        rename("Temp.dat","book.dat");
+
+        cout<<"\n\n\tRecord Deleted ..";
+
+        getch();
+
 }
+void admin_menu()
+{
+        system("cls");
+
+        int ch2;
+
+        cout<<"\n\n\n\tADMINISTRATOR MENU";
+
+        cout<<"\n\n\t1.CREATE STUDENT RECORD";
+
+        cout<<"\n\n\t2.DISPLAY ALL STUDENTS RECORD";
+
+        cout<<"\n\n\t3.DISPLAY SPECIFIC STUDENT RECORD ";
+
+        cout<<"\n\n\t4.MODIFY STUDENT RECORD";
+
+        cout<<"\n\n\t5.DELETE STUDENT RECORD";
+
+        cout<<"\n\n\t6.CREATE BOOK ";
+
+        cout<<"\n\n\t7.DISPLAY ALL BOOKS ";
+
+        cout<<"\n\n\t8.DISPLAY SPECIFIC BOOK ";
+
+        cout<<"\n\n\t9.MODIFY BOOK ";
+
+        cout<<"\n\n\t10.DELETE BOOK ";
+
+        cout<<"\n\n\t11.BACK TO MAIN MENU";
+
+        cout<<"\n\n\tPlease Enter Your Choice (1-11) ";
+
+        cin>>ch2;
+
+
+}
+
+
+}
+
 
