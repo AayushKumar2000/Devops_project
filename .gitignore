@@ -1,0 +1,5 @@
+## file to be included are written here
+*.exe
+*txt
+*dat
+*out
